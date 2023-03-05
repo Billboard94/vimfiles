@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/usr/lib/python3/dist-packages/powerline'
+let g:netrw_dirhist_5='/home/vganiu'
+let g:netrw_dirhist_4='/home/vganiu/.cache'
+let g:netrw_dirhist_3='/home/vganiu/.cache/vscode-cpptools'
+let g:netrw_dirhist_2='/home/vganiu/.cache'
+let g:netrw_dirhist_1='/home/vganiu'
