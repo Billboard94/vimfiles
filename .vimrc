@@ -75,7 +75,7 @@ Plug 'mattn/emmet-vim'
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes' 
-let g:airline_theme='desertink'
+let g:airline_theme='badwolf'
 
 for ak = 1 : N_chi
     D2_lok = 1i*hquer/8*delta_xi*diag(m_minus((ak-1)*N_Knoten+1:ak*N_Knoten,(ak-1)*N_Knoten+2:ak*N_Knoten+1)+m_minus((ak-1)*N_Knoten+1:ak*N_Knoten,(ak-1)*N_Knoten+2:ak*N_Knoten+1))/2;
