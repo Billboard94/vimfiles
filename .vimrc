@@ -38,8 +38,6 @@ set tabpagemax=50
 set cursorline
 set mouse=a
 set title
-set foldmethod=indent
-set foldnestmax=3
 set history=1000
 set spell
 
