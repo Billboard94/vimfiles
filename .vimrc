@@ -39,7 +39,7 @@ set cursorline
 set mouse=a
 set title
 set history=1000
-set spell
+" set spell
 
 " Make sure you use single quotes
 
@@ -77,18 +77,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes' 
 let g:airline_theme='badwolf'
 
-for ak = 1 : N_chi
-    D2_lok = 1i*hquer/8*delta_xi*diag(m_minus((ak-1)*N_Knoten+1:ak*N_Knoten,(ak-1)*N_Knoten+2:ak*N_Knoten+1)+m_minus((ak-1)*N_Knoten+1:ak*N_Knoten,(ak-1)*N_Knoten+2:ak*N_Knoten+1))/2;
-    D1_lok = 1i*hquer/4*delta_xi*diag(d_m_minus((ak-1)*N_Knoten+1:ak*N_Knoten,(ak-1)*N_Knoten+2:ak*N_Knoten+1)+d_m_minus((ak-1)*N_Knoten+1:ak*N_Knoten,(ak-1)*N_Knoten+2:ak*N_Knoten+1))/2....
-           + 1i*hquer/2*delta_xi*diag(m_plus((ak-1)*N_Knoten+1:ak*N_Knoten,(ak-1)*N_Knoten+2:ak*N_Knoten)+1)+m_plus((ak-1)*N_Knoten+1:ak*N_Knoten,(ak-1)*N_Knoten+2:ak*N_Knoten+1)/delta_xi/4;
-    D0_lok = 1i*hquer/2*delta_xi*diag(d_m_plus((ak-1)*N_Knoten+1:ak*N_Knoten,(ak-1)*N_Knoten+2:ak*N_Knoten+1)+d_m_plus((ak-1)*N_Knoten+1:ak*N_Knoten,(ak-1)*N_Knoten+2:ak*N_Knoten+1)/delta_xi/4....
-           + 1i*hquer/2*delta_xi*diag(m_minus((ak-1)*N_Knoten+1:ak*N_Knoten,(ak-1)*N_Knoten+2:ak*N_Knoten+1)+m_minus((ak-1)*N_Knoten+1:ak*N_Knoten,(ak-1)*N_Knoten+2:ak*N_Knoten+1)/(delta_xi^2)/4;
-
-    D2((ak-1)*N_Knoten+1:ak*N_Knoten,(ak-1)*N_Knoten+1:ak*N_Knoten) = D2_lok;
-    D1((ak-1)*N_Knoten+1:ak*N_Knoten,(ak-1)*N_Knoten+1:ak*N_Knoten) = D1_lok;
-    D0((ak-1)*N_Knoten+1:ak*N_Knoten,(ak-1)*N_Knoten+1:ak*N_Knoten) = D0_lok;
-end
-"
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
