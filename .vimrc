@@ -41,6 +41,9 @@ set title
 set history=1000
 " set spell
 
+map <C-b> :NERDTreeToggle<CR>
+map <C-y> :FZF<CR>
+
 " Make sure you use single quotes
 
 " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
