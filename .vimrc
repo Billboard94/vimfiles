@@ -39,6 +39,7 @@ set cursorline
 set mouse=a
 set title
 set history=1000
+set clipboard=unnamedplus
 " set spell
 
 map <C-b> :NERDTreeToggle<CR>
